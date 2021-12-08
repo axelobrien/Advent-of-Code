@@ -1,5 +1,7 @@
 import input from './input.js'
 
+type Direction = 'forward' | 'up' | 'down'
+
 let depth = 0
 let horizontalPos = 0
 let aim = 0
@@ -19,7 +21,7 @@ function goUp(change: number) {
 
 for (let i = 0; i < input.length; i++) {
     let command = input[i].split(" ")
-    let commandtDirection = command[0]
+    let commandtDirection = command[0] as Direction
     let commandValue = +command[1]
 
     switch (commandtDirection) {

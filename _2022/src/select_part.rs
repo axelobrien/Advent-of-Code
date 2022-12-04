@@ -1,12 +1,12 @@
 use std::io;
 
-pub(crate) extern
+pub(crate)
 
 
 // Gets user input for the part number
 // Part numbers can be 1 or 2
 fn select_part() -> u8 {
-    println!("Running Day 1\nWhich part would you like to solve? (1/2)");
+    println!("Which part would you like to solve? (1/2)");
     
     // Gets part
     let mut user_input = String::new();

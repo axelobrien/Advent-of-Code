@@ -1,6 +1,6 @@
 use crate::select_part;
 
-pub(crate) extern
+pub(crate)
 
 fn main() {
     let part = select_part::select_part();

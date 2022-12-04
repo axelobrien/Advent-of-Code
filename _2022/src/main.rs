@@ -1,9 +1,10 @@
 use std::io;
 
 mod day_1;
+mod select_part;
 
 fn main() {
-    let days = vec![day_1::run];
+    let days = vec![day_1::main];
     println!("Welcome to the answers to Advent of Code 2022 by Sirbananathe6th!");
     loop {
         println!("Which day do you want to run? (1-{})", days.len());

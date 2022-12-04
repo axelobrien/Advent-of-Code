@@ -1,24 +1,9 @@
-use std::io;
+use crate::select_part;
 
 pub(crate) extern
 
-fn run() {
-    println!("Running Day 1\nWhich part would you like to solve? (1/2)");
-    
-    // Gets part
-    let mut user_input = String::new();
-    io::stdin()
-        .read_line(&mut user_input)
-        .expect("Please input a number");
-
-    let part: u8 = user_input.trim().parse().unwrap();
-
-    // Loop until the user enters a valid number
-    if !(part == 1 || part == 2) {
-        println!("Invalid input");
-        run();
-        return
-    }
+fn main() {
+    let part = select_part::select_part();
 
     let input = include_str!("./inputs/1");
     

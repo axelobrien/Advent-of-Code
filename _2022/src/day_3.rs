@@ -68,5 +68,5 @@ fn main() {
         }
     }
 
-    println!("{}", sum_of_priorities);
+    println!("Sum of the priorities: {}", sum_of_priorities);
 }
